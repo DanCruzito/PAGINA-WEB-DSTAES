@@ -1,0 +1,19 @@
+<button
+  [id]="idbutton()"
+  [type]="typebutton()"
+  [disabled]="disabled()"
+  [class]="button_classes + ' ' + disabled_classes()"
+>
+  @if (icon() || labelbutton()) {
+    @if (icon()) {
+      <ui-icon
+        [icon]="icon()!"
+        [class.me-2]="!!labelbutton()"
+        [class.animate-spin]="is_spinning()"
+      />
+    }
+    {{ labelbutton() }}
+  } @else {
+    <ng-content></ng-content>
+  }
+</button>
