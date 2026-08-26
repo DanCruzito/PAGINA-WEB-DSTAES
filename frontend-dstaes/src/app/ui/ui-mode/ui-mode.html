@@ -1,0 +1,6 @@
+<ui-button
+  variant="ghost"
+  [icon]="icon()"
+  (click)="theme_service.toggle()"
+  [attr.aria-label]="theme_service.mode() === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'"
+/>
