@@ -1,2 +1,7 @@
 @import './styles/theme.css';
 @import 'tailwindcss';
+@plugin "@iconify/tailwind4";
+
+html {
+  background-color: var(--color-neutral-primary);
+}
