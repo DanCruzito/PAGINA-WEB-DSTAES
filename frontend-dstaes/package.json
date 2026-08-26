@@ -29,6 +29,8 @@
     "@angular/build": "^21.2.18",
     "@angular/cli": "^21.2.18",
     "@angular/compiler-cli": "^21.2.0",
+    "@iconify-json/ri": "^1.2.10",
+    "@iconify/tailwind4": "^1.2.3",
     "@tailwindcss/postcss": "^4.1.12",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
