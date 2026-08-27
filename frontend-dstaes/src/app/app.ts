@@ -1,12 +1,10 @@
 import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ToggleThemeService } from './services/toggle-theme.service';
-import { UiMode } from './ui/ui-mode/ui-mode';
-//import { initFlowbite } from 'flowbite';
+import { ToggleThemeService } from './shared/services/toggle-theme.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, UiMode],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -16,6 +14,5 @@ export class App {
 
   constructor() {
     this.theme_service.initialize();
-    //initFlowbite();
   }
 }

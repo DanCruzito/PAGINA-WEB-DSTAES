@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
-import { ToggleThemeService } from '../../services/toggle-theme.service';
 import { UiButton } from '../ui-button/ui-button';
+import { ToggleThemeService } from '../../services/toggle-theme.service';
 
 @Component({
   selector: 'ui-mode',

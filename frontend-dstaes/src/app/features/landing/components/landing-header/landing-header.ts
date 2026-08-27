@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { UiButton } from '../../../../ui/ui-button/ui-button';
-import { UiMode } from '../../../../ui/ui-mode/ui-mode';
+import { UiMode } from '../../../../shared/ui/ui-mode/ui-mode';
+import { UiButton } from '../../../../shared/ui/ui-button/ui-button';
 
 @Component({
   selector: 'landing-header',
