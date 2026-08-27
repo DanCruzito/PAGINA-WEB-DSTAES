@@ -1,10 +1,9 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-
-import { LandingHeader } from "../../components/landing-header/landing-header";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { LayoutLanding } from "../../../../layout/layout-landing/layout-landing";
 
 @Component({
   selector: 'page-landing',
-  imports: [LandingHeader],
+  imports: [LayoutLanding],
   templateUrl: './page-landing.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
