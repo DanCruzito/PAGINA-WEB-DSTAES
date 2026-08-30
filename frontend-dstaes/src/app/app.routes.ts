@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { PageLanding } from './features/landing/pages/page-landing/page-landing';
 import { PageDashboard } from './features/dashboard/pages/page-dashboard/page-dashboard';
-import { LayoutLanding } from './layout/layout-landing/layout-landing';
-import { LayoutDashboard } from './layout/layout-dashboard/layout-dashboard';
+import { LayoutLanding } from './layout/layout-landing/template/layout-landing';
+import { LayoutDashboard } from './layout/layout-dashboard/template/layout-dashboard';
 
 export const routes: Routes = [
   {

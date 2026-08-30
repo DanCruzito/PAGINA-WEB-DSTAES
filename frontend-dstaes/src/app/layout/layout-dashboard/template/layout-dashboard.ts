@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { DashboardHeader } from '../../features/dashboard/components/dashoboard-header/dashboard-header';
 import { RouterOutlet } from '@angular/router';
+import { DashboardHeader } from '../../../features/dashboard/components/dashoboard-header/dashboard-header';
 
 @Component({
   selector: 'layout-dashboard',

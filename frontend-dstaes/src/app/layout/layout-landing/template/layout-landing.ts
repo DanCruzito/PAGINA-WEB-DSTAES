@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { LandingHeader } from '../../features/landing/components/landing-header/landing-header';
 import { RouterOutlet } from "@angular/router";
+import { LandingHeader } from '../../../features/landing/components/landing-header/landing-header';
 
 @Component({
   selector: 'layout-landing',
