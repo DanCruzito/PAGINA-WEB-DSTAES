@@ -4,10 +4,11 @@ import { UiMode } from "../../../../shared/ui/ui-mode/ui-mode";
 import { UiButton } from "../../../../shared/ui/ui-button/ui-button";
 import { RouterLink } from '@angular/router';
 import { LayoutLandingHeaderIso } from "../layout-landing-header-iso/layout-landing-header-iso";
+import { LayoutLandingHeaderOption } from '../layout-landing-header-option/layout-landing-header-option';
 
 @Component({
   selector: 'layout-landing-header',
-  imports: [LayoutLandingHeaderLogo, UiMode, UiButton, RouterLink, LayoutLandingHeaderIso],
+  imports: [LayoutLandingHeaderLogo, UiMode, UiButton, RouterLink, LayoutLandingHeaderIso, LayoutLandingHeaderOption],
   templateUrl: './layout-landing-header.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
