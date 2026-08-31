@@ -1,9 +1,14 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { LandingSectionStartCarousel } from "../landing-section-start-carousel/landing-section-start-carousel";
+import { UiButton } from "../../../../shared/ui/ui-button/ui-button";
+import { LandingCarouselService } from '../../services/landing-carousel.service';
 
 @Component({
-  selector: 'app-landing-section-start',
-  imports: [],
+  selector: 'landing-section-start',
+  imports: [LandingSectionStartCarousel, UiButton],
   templateUrl: './landing-section-start.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LandingSectionStart {}
+export class LandingSectionStart {
+  public carousel_service = inject(LandingCarouselService);
+}

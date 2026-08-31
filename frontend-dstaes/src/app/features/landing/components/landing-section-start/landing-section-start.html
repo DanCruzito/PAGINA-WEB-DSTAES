@@ -1,1 +1,34 @@
-<p>landing-section-start works!</p>,
+<section class="relative text-white">
+  <ui-button
+    icon="arrow_left"
+    variant="secondary"
+    size="xl"
+    rounded
+    class="absolute top-1/2 z-10"
+    (click)="carousel_service.previous()"
+  />
+  <ui-button
+    icon="arrow_right"
+    variant="secondary"
+    size="xl"
+    rounded
+    class="absolute top-1/2 right-0 z-10"
+    (click)="carousel_service.next()"
+  />
+
+  <div class="flex flex-col items-center">
+    {{ carousel_service.current_index() }}
+    <app-landing-section-start-carousel />
+
+    <div class="mt-10 text-center">
+      <h1 class="text-4xl font-black leading-none tracking-tight md:text-7xl">
+        Transformamos ideas en
+        <span class="">experiencias digitales</span>
+      </h1>
+      <p class="mx-auto mt-5 max-w-3xl text-sm text-slate-300 md:text-xl">
+        Desarrollamos soluciones tecnológicas innovadoras que impulsan el crecimiento de tu negocio
+        en la era digital.
+      </p>
+    </div>
+  </div>
+</section>
