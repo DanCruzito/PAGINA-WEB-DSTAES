@@ -7,8 +7,9 @@
       <layout-landing-header-logo />
     </div>
     <div class="flex flex-row gap-4">
-      <layout-landing-header-option label="Inicio" slug="inicio" />
-      <layout-landing-header-option label="Servicios" slug="servicios" />
+      @for (option of options(); track option.slug) {
+        <layout-landing-header-option label="{{ option.label }}" slug="{{ option.slug }}" />
+      }
     </div>
     <div class="flex flex-row gap-2 items-center">
       <ui-mode />
