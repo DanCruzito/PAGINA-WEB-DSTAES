@@ -1,1 +1,10 @@
-<p>landing-section-start-carousel works!</p>,
+<div class="flex items-center justify-center transform-3d perspective-[1400px]">
+  @for (item of carousel_service.items; track item.title; let index = $index) {
+    <article
+      #slide_card
+      class="w-180 h-140 transform-3d bg-cover absolute rounded-2xl cursor-pointer"
+      [style.background-image]="'url(' + item.image + ')'"
+      (click)="go_to(index)"
+    ></article>
+  }
+</div>
