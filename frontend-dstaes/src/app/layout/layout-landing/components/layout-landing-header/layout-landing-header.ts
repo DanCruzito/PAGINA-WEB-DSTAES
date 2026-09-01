@@ -8,11 +8,11 @@ import {
 import { RouterLink } from '@angular/router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ImageIso } from '../../../../shared/components/image-iso/image-iso';
+import { ImageLogo } from '../../../../shared/components/image-logo/image-logo';
 import { UiButton } from '../../../../shared/ui/ui-button/ui-button';
 import { UiMode } from '../../../../shared/ui/ui-mode/ui-mode';
 import { landing_options } from '../../data/options';
-import { LayoutLandingHeaderIso } from '../layout-landing-header-iso/layout-landing-header-iso';
-import { LayoutLandingHeaderLogo } from '../layout-landing-header-logo/layout-landing-header-logo';
 import { LayoutLandingHeaderOption } from '../layout-landing-header-option/layout-landing-header-option';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -20,11 +20,11 @@ gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'layout-landing-header',
   imports: [
-    LayoutLandingHeaderLogo,
+    ImageLogo,
     UiMode,
     UiButton,
     RouterLink,
-    LayoutLandingHeaderIso,
+    ImageIso,
     LayoutLandingHeaderOption,
   ],
   templateUrl: './layout-landing-header.html',
