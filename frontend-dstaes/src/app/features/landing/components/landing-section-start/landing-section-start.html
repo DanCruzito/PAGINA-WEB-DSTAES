@@ -1,5 +1,5 @@
 <section class="flex flex-col items-center">
-  <div class="h-160 w-full items-center justify-center flex relative">
+  <div class="h-130 w-full items-center justify-center flex relative">
     <landing-section-start-carousel />
 
     <ui-button
@@ -7,7 +7,7 @@
       variant="secondary"
       size="xl"
       rounded
-      class="absolute left-0 z-10"
+      class="absolute left-4 z-10"
       (click)="carousel_service.previous()"
     />
     <ui-button
@@ -15,13 +15,13 @@
       variant="secondary"
       size="xl"
       rounded
-      class="absolute right-0 z-10"
+      class="absolute right-4 z-10"
       (click)="carousel_service.next()"
     />
   </div>
 
   <div class="text-center max-w-200 flex flex-col gap-4">
-    <h1 class="text-6xl text-heading">
+    <h1 class="text-5xl font-semibold text-heading">
       Transformamos ideas en
       <span class="">experiencias digitales</span>
     </h1>
@@ -29,5 +29,17 @@
       Desarrollamos soluciones tecnológicas innovadoras que impulsan el crecimiento de tu negocio en
       la era digital.
     </p>
+  </div>
+
+  <div class="flex flex-row gap-4">
+    <ui-button variant="default" size="xl" class="mt-6">
+      Ver Servicios
+
+      <ui-icon icon="arrow_right" class="ml-2" />
+    </ui-button>
+    <ui-button variant="secondary" size="xl" class="mt-6">
+      Ver Portafolio
+      <ui-icon icon="arrow_right" class="ml-2" />
+    </ui-button>
   </div>
 </section>
