@@ -1,6 +1,6 @@
 import { afterNextRender, Component, ElementRef, inject, viewChild } from '@angular/core';
 import { NgClass, NgTemplateOutlet } from '@angular/common';
-import { ModalService } from '../services/modal.service';
+import { ModalService } from '../../services/modal.service';
 
 const modal_size_classes: Record<string, string> = {
   sm: 'max-w-md',
