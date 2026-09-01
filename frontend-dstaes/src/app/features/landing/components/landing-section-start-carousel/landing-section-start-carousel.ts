@@ -2,6 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
+  ViewEncapsulation,
   effect,
   inject,
   viewChildren,
@@ -13,7 +14,7 @@ import { LandingCarouselService } from '../../services/landing-carousel.service'
 gsap.registerPlugin(CSSPlugin);
 
 @Component({
-  selector: 'app-landing-section-start-carousel',
+  selector: 'landing-section-start-carousel',
   imports: [],
   templateUrl: './landing-section-start-carousel.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -46,7 +47,7 @@ export class LandingSectionStartCarousel {
   private calculate_x(distance: number, diff: number, element_width: number): number {
     if (distance === 0) return 0;
 
-    const base_x = element_width * 0.9 * diff;
+    const base_x = element_width * 0.87 * diff;
     if (distance === 1) return base_x;
 
     const adjustment = (distance - 1) * 0.1 * element_width;
@@ -57,7 +58,15 @@ export class LandingSectionStartCarousel {
     if (distance === 0) return 0;
     if (distance === 1) return -element_width * (1 / 3);
 
-    return -element_width * (0.33 + (distance - 1) * 0.67);
+    return -element_width * (0.33 + (distance - 1) * 0.8);
+  }
+
+  private calculate_opacity(distance: number): number {
+    if (distance === 0) return 1;
+    if (distance === 1) return 0.8;
+    if (distance === 2) return 0.7;
+    if (distance === 3) return 0.05;
+    return Math.max(0.1, 0.2 - (distance - 3) * 0.05);
   }
 
   private update_cards(): void {
@@ -66,7 +75,7 @@ export class LandingSectionStartCarousel {
     const cards = this.slide_elements();
     if (!cards.length) return;
 
-    const max_visible = 2;
+    const max_visible = 3;
 
     const tl = gsap.timeline({
       defaults: {
@@ -87,7 +96,7 @@ export class LandingSectionStartCarousel {
       const is_visible = distance <= max_visible;
 
       const element_width = element.nativeElement.offsetWidth;
-      const rotate_by_distance = 40;
+      const rotate_by_distance = 45;
 
       tl.to(
         element.nativeElement,
@@ -96,7 +105,7 @@ export class LandingSectionStartCarousel {
           z: this.calculate_z(distance, element_width),
           rotateY: diff === 0 ? 0 : diff > 0 ? rotate_by_distance : -rotate_by_distance,
           rotateX: 0,
-          opacity: is_visible ? 1 : 0,
+          opacity: this.calculate_opacity(distance),
           visibility: is_visible ? 'visible' : 'hidden',
           zIndex: 100 - distance,
           overwrite: true,

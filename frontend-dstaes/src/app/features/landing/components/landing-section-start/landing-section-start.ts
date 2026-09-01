@@ -7,6 +7,9 @@ import { LandingCarouselService } from '../../services/landing-carousel.service'
   selector: 'landing-section-start',
   imports: [LandingSectionStartCarousel, UiButton],
   templateUrl: './landing-section-start.html',
+  host: {
+    class: 'block w-full'
+  },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LandingSectionStart {

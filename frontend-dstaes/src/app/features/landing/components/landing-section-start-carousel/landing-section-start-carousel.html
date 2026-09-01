@@ -1,10 +1,11 @@
-<div class="flex items-center justify-center transform-3d perspective-[1400px]">
+<div class="flex items-center justify-center perspective-[1400px]">
   @for (item of carousel_service.items; track item.title; let index = $index) {
-    <article
+    <div
       #slide_card
-      class="w-180 h-140 transform-3d bg-cover absolute rounded-2xl cursor-pointer"
-      [style.background-image]="'url(' + item.image + ')'"
+      class="w-180 transform-3d bg-cover absolute rounded-2xl cursor-pointer p-6 bg-white/15 backdrop-blur-md backdrop-saturate-100 border border-white/30 shadow-[0_8px_32px_0_rgba(0,0,0,0.2)]"
       (click)="go_to(index)"
-    ></article>
+    >
+      <img [src]="item.image" [alt]="item.title" class="rounded-2xl" (click)="go_to(index)" />
+    </div>
   }
 </div>

@@ -1,34 +1,33 @@
-<section class="relative text-white">
-  <ui-button
-    icon="arrow_left"
-    variant="secondary"
-    size="xl"
-    rounded
-    class="absolute top-1/2 z-10"
-    (click)="carousel_service.previous()"
-  />
-  <ui-button
-    icon="arrow_right"
-    variant="secondary"
-    size="xl"
-    rounded
-    class="absolute top-1/2 right-0 z-10"
-    (click)="carousel_service.next()"
-  />
+<section class="flex flex-col items-center">
+  <div class="h-160 w-full items-center justify-center flex relative">
+    <landing-section-start-carousel />
 
-  <div class="flex flex-col items-center">
-    {{ carousel_service.current_index() }}
-    <app-landing-section-start-carousel />
+    <ui-button
+      icon="arrow_left"
+      variant="secondary"
+      size="xl"
+      rounded
+      class="absolute left-0 z-10"
+      (click)="carousel_service.previous()"
+    />
+    <ui-button
+      icon="arrow_right"
+      variant="secondary"
+      size="xl"
+      rounded
+      class="absolute right-0 z-10"
+      (click)="carousel_service.next()"
+    />
+  </div>
 
-    <div class="mt-10 text-center">
-      <h1 class="text-4xl font-black leading-none tracking-tight md:text-7xl">
-        Transformamos ideas en
-        <span class="">experiencias digitales</span>
-      </h1>
-      <p class="mx-auto mt-5 max-w-3xl text-sm text-slate-300 md:text-xl">
-        Desarrollamos soluciones tecnológicas innovadoras que impulsan el crecimiento de tu negocio
-        en la era digital.
-      </p>
-    </div>
+  <div class="text-center max-w-200 flex flex-col gap-4">
+    <h1 class="text-6xl text-heading">
+      Transformamos ideas en
+      <span class="">experiencias digitales</span>
+    </h1>
+    <p class="text-slate-300 text-2xl">
+      Desarrollamos soluciones tecnológicas innovadoras que impulsan el crecimiento de tu negocio en
+      la era digital.
+    </p>
   </div>
 </section>
