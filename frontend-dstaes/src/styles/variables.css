@@ -64,6 +64,95 @@
   --color-dark-900: var(--color-gray-900);
   --color-dark-950: var(--color-gray-950);
 
+  --color-zircon-50: #f0f4fa;
+  --color-zircon-100: #e4ebf5;
+  --color-zircon-200: #cfdcee;
+  --color-zircon-300: #aec5e3;
+  --color-zircon-400: #87a6d3;
+  --color-zircon-500: #6a8ac7;
+  --color-zircon-600: #5772ba;
+  --color-zircon-700: #4c61a9;
+  --color-zircon-800: #42508b;
+  --color-zircon-900: #39456f;
+  --color-zircon-950: #262c45;
+
+  --color-blue-ribbon-50: #eff6ff;
+  --color-blue-ribbon-100: #dbeafe;
+  --color-blue-ribbon-200: #bfdbfe;
+  --color-blue-ribbon-300: #93c5fd;
+  --color-blue-ribbon-400: #60a5fa;
+  --color-blue-ribbon-500: #3b82f6;
+  --color-blue-ribbon-600: #2563eb;
+  --color-blue-ribbon-700: #1d4ed8;
+  --color-blue-ribbon-800: #1e40af;
+  --color-blue-ribbon-900: #1e3a8a;
+  --color-blue-ribbon-950: #172554;
+
+  --color-azure-radiance-50: #eff6ff;
+  --color-azure-radiance-100: #dbeafe;
+  --color-azure-radiance-200: #bfdbfe;
+  --color-azure-radiance-300: #93c5fd;
+  --color-azure-radiance-400: #60a5fa;
+  --color-azure-radiance-500: #3b82f6;
+  --color-azure-radiance-600: #2563eb;
+  --color-azure-radiance-700: #1d4ed8;
+  --color-azure-radiance-800: #1e40af;
+  --color-azure-radiance-900: #1e3a8a;
+  --color-azure-radiance-950: #172554;
+
+  --color-mirage-50: #f0f7fe;
+  --color-mirage-100: #deecfb;
+  --color-mirage-200: #c4dff9;
+  --color-mirage-300: #9ccbf4;
+  --color-mirage-400: #6dafed;
+  --color-mirage-500: #4b90e6;
+  --color-mirage-600: #3674da;
+  --color-mirage-700: #2d60c8;
+  --color-mirage-800: #2a4ea3;
+  --color-mirage-900: #274481;
+  --color-mirage-950: #0f172a;
+
+  --color-fiord-50: #f6f7f9;
+  --color-fiord-100: #eceef2;
+  --color-fiord-200: #d5dae2;
+  --color-fiord-300: #b0bbc9;
+  --color-fiord-400: #8596ab;
+  --color-fiord-500: #667a91;
+  --color-fiord-600: #516278;
+  --color-fiord-700: #475569;
+  --color-fiord-800: #394453;
+  --color-fiord-900: #333b47;
+  --color-fiord-950: #22272f;
+
+  --color-hot-toddy-50: #fdfce9;
+  --color-hot-toddy-100: #fcf9c5;
+  --color-hot-toddy-200: #faf18e;
+  --color-hot-toddy-300: #f6e14e;
+  --color-hot-toddy-400: #f1ce1e;
+  --color-hot-toddy-500: #e1b511;
+  --color-hot-toddy-600: #b8860b;
+  --color-hot-toddy-700: #9b660d;
+  --color-hot-toddy-800: #805013;
+  --color-hot-toddy-900: #6d4216;
+  --color-hot-toddy-950: #402208;
+
+  --color-rock-blue-50: #f4f7f9;
+  --color-rock-blue-100: #ecf0f3;
+  --color-rock-blue-200: #dce4e9;
+  --color-rock-blue-300: #c6d2db;
+  --color-rock-blue-400: #aebccb;
+  --color-rock-blue-500: #94a3b8;
+  --color-rock-blue-600: #828fa9;
+  --color-rock-blue-700: #6f7b93;
+  --color-rock-blue-800: #5c6577;
+  --color-rock-blue-900: #4d5562;
+  --color-rock-blue-950: #2d3139;
+
+  /* Dark - Metrics */
+  --color-main-dark-background: #0a1428;
+
+  /* Light - Metrics */
+
   ::-webkit-scrollbar {
     width: 3px;
     height: 3px;
