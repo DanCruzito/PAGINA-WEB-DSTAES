@@ -1,19 +1,17 @@
-<div class="flex flex-col">
-  <div
-    class="flex flex-row m-4 border-body-subtle border-2 rounded-lg p-4 bg-neutral justify-between items-center"
-  >
-    <div class="flex flex-row gap-4 items-center">
-      <layout-landing-header-iso />
-      <layout-landing-header-logo />
-    </div>
-    <div class="flex flex-row gap-4">
-      @for (option of options(); track option.slug) {
-        <layout-landing-header-option label="{{ option.label }}" slug="{{ option.slug }}" />
-      }
-    </div>
-    <div class="flex flex-row gap-2 items-center">
-      <ui-mode />
-      <ui-button variant="default" labelbutton="Ingresar" routerLink="/dashboard" />
-    </div>
+<div
+  class="flex flex-row m-4 rounded-lg p-4 bg-neutral justify-between items-center -white/15 backdrop-blur-md backdrop-saturate-100 border border-white/30 shadow-[0_8px_32px_0_rgba(0,0,0,0.2)] my-4 text-heading"
+>
+  <div class="flex flex-row gap-4 items-center">
+    <layout-landing-header-iso />
+    <layout-landing-header-logo />
+  </div>
+  <div class="flex flex-row gap-4">
+    @for (option of options(); track option.slug) {
+      <layout-landing-header-option label="{{ option.label }}" slug="{{ option.slug }}" />
+    }
+  </div>
+  <div class="flex flex-row gap-2 items-center">
+    <ui-mode />
+    <ui-button variant="default" labelbutton="Ingresar" routerLink="/dashboard" />
   </div>
 </div>
