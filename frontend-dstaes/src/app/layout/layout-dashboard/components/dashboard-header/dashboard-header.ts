@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { UiMode } from '../../../../shared/ui/ui-mode/ui-mode';
-import { UiButton } from '../../../../shared/ui/ui-button/ui-button';
 import { RouterLink } from "@angular/router";
+import { UiButton } from '../../../../shared/ui/ui-button/ui-button';
+import { UiMode } from '../../../../shared/ui/ui-mode/ui-mode';
 
 @Component({
   selector: 'dashboard-header',
