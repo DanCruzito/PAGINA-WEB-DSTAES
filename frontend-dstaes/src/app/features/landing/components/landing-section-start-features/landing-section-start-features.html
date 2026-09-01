@@ -1,32 +1,19 @@
 <div
   class="flex flex-row gap-12 px-12 p-4 bg-white/15 backdrop-blur-md backdrop-saturate-100 border border-white/30 shadow-[0_8px_32px_0_rgba(0,0,0,0.2)] rounded-2xl my-4 text-heading"
 >
-  <div class="flex flex-row gap-2 w-32">
-    <ui-icon icon="cube" class="text-4xl" />
-    <div class="flex flex-col">
-      <span class="text-2xl font-semibold">+{{ projects() }}</span>
-      <span class="text-sm">Proyectos completados</span>
+  @for (feature of landing_features; track feature.description; let index = $index) {
+    <div class="flex flex-row gap-2 w-32">
+      <ui-icon [icon]="feature.icon" class="text-4xl" />
+      <div class="flex flex-col">
+        @if (feature.quantity !== undefined) {
+          <span class="text-2xl font-semibold">
+            +{{ counter_values()[index] }}{{ feature.head ?? '' }}
+          </span>
+        } @else {
+          <span class="text-2xl font-semibold">{{ feature.head }}</span>
+        }
+        <span class="text-sm">{{ feature.description }}</span>
+      </div>
     </div>
-  </div>
-  <div class="flex flex-row gap-2 w-32">
-    <ui-icon icon="cube" class="text-4xl" />
-    <div class="flex flex-col">
-      <span class="text-2xl font-semibold">+{{ projects() }}</span>
-      <span class="text-sm">Proyectos completados</span>
-    </div>
-  </div>
-  <div class="flex flex-row gap-2 w-32">
-    <ui-icon icon="cube" class="text-4xl" />
-    <div class="flex flex-col">
-      <span class="text-2xl font-semibold">+{{ projects() }}</span>
-      <span class="text-sm">Proyectos completados</span>
-    </div>
-  </div>
-  <div class="flex flex-row gap-2 w-32">
-    <ui-icon icon="cube" class="text-4xl" />
-    <div class="flex flex-col">
-      <span class="text-2xl font-semibold">+{{ projects() }}</span>
-      <span class="text-sm">Proyectos completados</span>
-    </div>
-  </div>
+  }
 </div>

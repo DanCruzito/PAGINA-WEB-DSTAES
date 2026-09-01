@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { UiIcon } from "../../../../shared/ui/ui-icon/ui-icon";
 import { counter_increase } from '../../../../shared/helpers/counter-increase';
+import { landing_features } from '../../data/landing-features';
 
 @Component({
   selector: 'landing-section-start-features',
@@ -15,18 +16,28 @@ import { counter_increase } from '../../../../shared/helpers/counter-increase';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LandingSectionStartFeatures {
-  readonly projects = signal(0);
+  readonly landing_features = landing_features;
+  readonly counter_values = signal<number[]>(
+    landing_features.map(feature => feature.quantity ?? 0),
+  );
 
-  private readonly destroyRef = inject(DestroyRef);
+  private readonly destroy_ref = inject(DestroyRef);
 
   constructor() {
-    const cancelCounters = [
-      counter_increase(150, value => this.projects.set(value)),
-      counter_increase(150, value => this.projects.set(value)),
-      counter_increase(150, value => this.projects.set(value)),
-      counter_increase(150, value => this.projects.set(value)),
-    ];
+    const cancel_counters = landing_features.flatMap((feature, index) =>
+      feature.quantity === undefined
+        ? []
+        : [
+          counter_increase(feature.quantity, value =>
+            this.counter_values.update(values =>
+              values.map((current, currentIndex) =>
+                currentIndex === index ? value : current,
+              ),
+            ),
+          ),
+        ],
+    );
 
-    this.destroyRef.onDestroy(() => cancelCounters.forEach(cancel => cancel()));
+    this.destroy_ref.onDestroy(() => cancel_counters.forEach(cancel => cancel()));
   }
 }
