@@ -2,7 +2,7 @@
   @for (item of carousel_service.items; track item.title; let index = $index) {
     <div
       #slide_card
-      class="w-156 transform-3d bg-cover absolute rounded-2xl cursor-pointer p-6 bg-white/15 backdrop-blur-md backdrop-saturate-100 border border-white/30 shadow-[0_8px_32px_0_rgba(0,0,0,0.2)]"
+      class="w-64 sm:w-96 md:w-120 lg:w-156 transform-3d bg-cover absolute rounded-2xl cursor-pointer p-6 bg-white/15 backdrop-blur-md backdrop-saturate-100 border border-white/30 shadow-[0_8px_32px_0_rgba(0,0,0,0.2)]"
       (click)="go_to(index)"
     >
       <img [src]="item.image" [alt]="item.title" class="rounded-2xl" (click)="go_to(index)" />

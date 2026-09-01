@@ -2,7 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  ViewEncapsulation,
+  OnDestroy,
   effect,
   inject,
   viewChildren,
@@ -10,6 +10,7 @@ import {
 import { gsap } from 'gsap';
 import { CSSPlugin } from 'gsap/CSSPlugin';
 import { LandingCarouselService } from '../../services/landing-carousel.service';
+import { listen_window_resize } from '../../../../shared/helpers/resize';
 
 gsap.registerPlugin(CSSPlugin);
 
@@ -19,17 +20,23 @@ gsap.registerPlugin(CSSPlugin);
   templateUrl: './landing-section-start-carousel.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LandingSectionStartCarousel {
+export class LandingSectionStartCarousel implements OnDestroy {
 
   readonly carousel_service = inject(LandingCarouselService);
   readonly current_index = this.carousel_service.current_index;
   readonly slide_elements = viewChildren<ElementRef<HTMLDivElement>>('slide_card');
-
+  private destroy_resize: () => void = () => undefined;
 
   constructor() {
     effect(() => {
       this.update_cards();
     });
+
+    this.destroy_resize = listen_window_resize(() => this.update_cards());
+  }
+
+  ngOnDestroy(): void {
+    this.destroy_resize();
   }
 
   next(): void {
@@ -85,7 +92,6 @@ export class LandingSectionStartCarousel {
     });
 
     cards.forEach((element, index) => {
-
       const items_length = this.carousel_service.items_length();
       const raw_diff =
         (index - this.current_index() + items_length) % items_length;
