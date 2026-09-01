@@ -78,11 +78,11 @@
   --color-brand: var(--color-azure-radiance-500);
   --color-brand-medium: var(--color-azure-radiance-200);
   --color-brand-strong: var(--color-azure-radiance-800);
-  --color-accent-softer: var(--color-hot-toddy-100);
-  --color-accent-soft: var(--color-hot-toddy-300);
-  --color-accent: var(--color-hot-toddy-600);
-  --color-accent-medium: var(--color-hot-toddy-300);
-  --color-accent-strong: var(--color-hot-toddy-900);
+  --color-accent-strong: var(--color-rock-blue-950);
+  --color-accent-medium: var(--color-rock-blue-700);
+  --color-accent: var(--color-rock-blue-500);
+  --color-accent-soft: var(--color-rock-blue-300);
+  --color-accent-softer: var(--color-rock-blue-100);
   --color-success-soft: var(--color-success-50);
   --color-success: var(--color-success-700);
   --color-success-medium: var(--color-success-100);
@@ -169,13 +169,13 @@
 
   --color-brand-softer: var(--color-blue-ribbon-100);
   --color-brand-soft: var(--color-blue-ribbon-300);
-  --color-brand: var(--color-blue-ribbon-600);
+  --color-brand: var(--color-blue-ribbon-500);
   --color-brand-medium: var(--color-blue-ribbon-300);
-  --color-accent-strong: var(--color-rock-blue-950);
-  --color-accent-medium: var(--color-rock-blue-700);
-  --color-accent: var(--color-rock-blue-500);
-  --color-accent-soft: var(--color-rock-blue-300);
-  --color-accent-softer: var(--color-rock-blue-100);
+  --color-accent-softer: var(--color-hot-toddy-900);
+  --color-accent-soft: var(--color-hot-toddy-300);
+  --color-accent: var(--color-hot-toddy-500);
+  --color-accent-medium: var(--color-hot-toddy-300);
+  --color-accent-strong: var(--color-hot-toddy-100);
   --color-success-soft: var(--color-success-950);
   --color-success: var(--color-success-600);
   --color-success-medium: var(--color-success-900);

@@ -3,14 +3,14 @@
 >
   @for (feature of landing_features; track feature.description; let index = $index) {
     <div class="flex flex-row gap-2 w-32">
-      <ui-icon [icon]="feature.icon" class="text-4xl" />
+      <ui-icon [icon]="feature.icon" class="text-4xl text-brand dark:text-accent" />
       <div class="flex flex-col">
         @if (feature.quantity !== undefined) {
-          <span class="text-2xl font-semibold">
+          <span class="text-2xl font-semibold text-brand dark:text-accent">
             +{{ counter_values()[index] }}{{ feature.head ?? '' }}
           </span>
         } @else {
-          <span class="text-2xl font-semibold">{{ feature.head }}</span>
+          <span class="text-2xl font-semibold text-brand dark:text-accent">{{ feature.head }}</span>
         }
         <span class="text-sm">{{ feature.description }}</span>
       </div>
