@@ -6,11 +6,11 @@
       : 'transition-all duration-100'
   "
 >
-  <div class="flex flex-row gap-4 items-center">
+  <a class="flex flex-row gap-4 items-center" href="#start">
     <layout-landing-header-iso />
-    <layout-landing-header-logo />
-  </div>
-  <div class="flex flex-row gap-4">
+    <layout-landing-header-logo class="hidden min-[360px]:block" />
+  </a>
+  <div class="flex-row gap-4 hidden lg:flex">
     @for (option of options(); track option.slug) {
       <layout-landing-header-option
         [label]="option.label"
@@ -21,6 +21,6 @@
   </div>
   <div class="flex flex-row gap-2 items-center">
     <ui-mode />
-    <ui-button variant="default" labelbutton="Ingresar" routerLink="/dashboard" />
+    <ui-button variant="default" size="xl" labelbutton="Ingresar" routerLink="/dashboard" />
   </div>
 </div>

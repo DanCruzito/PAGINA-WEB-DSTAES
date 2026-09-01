@@ -1,5 +1,5 @@
 <section class="flex flex-col items-center gap-2">
-  <div class="h-116 w-full items-center justify-center flex relative">
+  <div class="h-64 sm:h-72 md:h-88 lg:h-116 w-full items-center justify-center flex relative">
     <landing-section-start-carousel />
 
     <ui-button
@@ -22,8 +22,8 @@
 
   @let item = current_item();
 
-  <div class="text-center max-w-200 flex flex-col gap-4 h-48" #textBlock>
-    <h1 class="text-5xl font-semibold text-heading">
+  <div class="text-center max-w-200 flex flex-col gap-4 h-48 p-4 justify-center" #textBlock>
+    <h1 class="text-2xl sm:text-4xl md:text-5xl font-semibold text-heading">
       @for (
         segment of get_highlighted_segments(item.title, item.highlight);
         track segment.text + $index
@@ -35,7 +35,7 @@
         }
       }
     </h1>
-    <p class="text-slate-300 text-2xl">
+    <p class="text-slate-300 text-lg sm:text-xl md:text-2xl">
       @for (
         segment of get_highlighted_segments(item.subtitle, item.highlight);
         track segment.text + $index

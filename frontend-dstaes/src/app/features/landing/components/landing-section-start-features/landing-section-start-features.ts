@@ -13,6 +13,7 @@ import { landing_features } from '../../data/landing-features';
   selector: 'landing-section-start-features',
   imports: [UiIcon],
   templateUrl: './landing-section-start-features.html',
+
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LandingSectionStartFeatures {
