@@ -1,0 +1,13 @@
+<div
+  class="block w-full"
+  [class.border]="!unwrap()"
+  [class.border-default]="!unwrap()"
+  [class.bg-neutral-primary-soft]="!unwrap()"
+  [class.rounded-base]="!unwrap()"
+  [class.shadow-xs]="!unwrap()"
+  [class.divide-y]="divided()"
+  [class.divide-default]="divided()"
+  [class.hover:bg-neutral-secondary-medium]="hoverable()"
+>
+  <ng-content></ng-content>
+</div>

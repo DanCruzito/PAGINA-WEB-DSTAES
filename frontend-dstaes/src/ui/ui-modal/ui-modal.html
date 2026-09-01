@@ -1,0 +1,11 @@
+<div #modal_el tabindex="-1" aria-hidden="true" [ngClass]="['hidden', placement_classes]">
+  <div class="relative w-full max-h-full" [ngClass]="[size_class]">
+    <div
+      class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6"
+    >
+      @if (modal_service.show_content()) {
+        <ng-container *ngTemplateOutlet="modal_service.options().content?.template" />
+      }
+    </div>
+  </div>
+</div>

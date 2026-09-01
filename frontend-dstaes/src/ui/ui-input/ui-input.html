@@ -1,0 +1,17 @@
+<input
+  [type]="fieldtype()"
+  [id]="id_value"
+  [placeholder]="placeholder()"
+  [value]="model().get() ?? ''"
+  [readonly]="readonly()"
+  [disabled]="disabled()"
+  (input)="model().set(set_value($event.target!))"
+  (blur)="model().touched()"
+  class="bg-neutral-secondary-medium border border-default-medium text-heading rounded-base focus:ring-brand focus:border-brand block w-full shadow-xs placeholder:text-body disabled:opacity-50 disabled:cursor-not-allowed"
+  [class]="
+    size_classes +
+    (field() && error_message() && field()!().touched()
+      ? ' bg-danger-soft! border-danger-subtle! text-fg-danger-strong! focus:ring-danger! focus:border-danger! placeholder:text-fg-danger-strong!'
+      : '')
+  "
+/>

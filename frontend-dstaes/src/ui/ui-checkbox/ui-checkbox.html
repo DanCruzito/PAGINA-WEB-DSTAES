@@ -1,0 +1,59 @@
+<div class="flex">
+  <input
+    [id]="id_value"
+    type="checkbox"
+    [checked]="is_checked"
+    [disabled]="disabled()"
+    (change)="toggle()"
+    class="w-4 h-4 border rounded-xs bg-neutral-secondary-medium focus:ring-2"
+    [class]="[
+      disabled()
+        ? 'border-light'
+        : is_error
+          ? 'bg-danger-soft! border-danger-subtle! focus:ring-danger'
+          : 'border-default-medium focus:ring-brand-soft',
+    ]"
+  />
+  <div class="ms-2 text-sm select-none">
+    <label
+      [attr.for]="id_value"
+      class="font-medium"
+      [class]="[
+        disabled()
+          ? 'text-fg-disabled font-black'
+          : is_error
+            ? 'text-fg-danger-strong!'
+            : href()
+              ? 'text-fg-brand'
+              : 'text-heading',
+      ]"
+    >
+      @if (href()) {
+        <a
+          [href]="href()"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:underline"
+          [class]="is_error ? 'text-fg-danger-strong!' : 'text-fg-brand'"
+        >
+          {{ label() }}
+        </a>
+      } @else {
+        {{ label() }}
+      }
+    </label>
+    @if (helper()) {
+      <p
+        class="text-xs font-normal"
+        [class]="
+          disabled() ? 'text-fg-disabled' : is_error ? 'text-fg-danger-strong!' : 'text-body'
+        "
+      >
+        {{ helper() }}
+      </p>
+    }
+    @if (is_error) {
+      <p class="text-xs text-fg-danger-strong mt-0.5">{{ error_message() }}</p>
+    }
+  </div>
+</div>
