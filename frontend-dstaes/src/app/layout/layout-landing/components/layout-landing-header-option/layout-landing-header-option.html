@@ -1,1 +1,11 @@
-<a href="#{{ slug() }}" class="font-semibold text-heading">{{ label() }}</a>
+<a
+  [href]="'#' + slug()"
+  class="relative font-semibold"
+  [class]="
+    active()
+      ? 'text-fg-brand underline decoration-3 underline-offset-8 decoration-fg-brand/80'
+      : 'text-heading/80 transition-colors duration-300 hover:text-white'
+  "
+>
+  {{ label() }}
+</a>

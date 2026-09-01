@@ -7,6 +7,7 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LayoutLandingHeaderOption {
-  label = input<string>();
-  slug = input<string>();
+  label = input.required<string>();
+  slug = input.required<string>();
+  active = input(false);
 }
