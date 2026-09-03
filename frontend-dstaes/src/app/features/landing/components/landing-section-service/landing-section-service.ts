@@ -5,10 +5,11 @@ import { landing_page_info } from '../../../../shared/data/landing_page_info';
 import { UiButton } from "../../../../shared/ui/ui-button/ui-button";
 import { LandingSectionServiceOption } from "../landing-section-service-option/landing-section-service-option";
 import { LandingSectionServiceSelected } from "../landing-section-service-selected/landing-section-service-selected";
+import { LandingSectionTechnology } from "../landing-section-technology/landing-section-technology";
 
 @Component({
   selector: 'landing-section-service',
-  imports: [LandingSectionServiceOption, LandingSectionServiceSelected],
+  imports: [LandingSectionServiceOption, LandingSectionServiceSelected, LandingSectionTechnology],
   templateUrl: './landing-section-service.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

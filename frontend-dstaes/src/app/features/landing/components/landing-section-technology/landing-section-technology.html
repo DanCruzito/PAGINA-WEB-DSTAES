@@ -1,0 +1,10 @@
+<ui-card className="p-4">
+  <div class="flex flex-col gap-4">
+    <p class="text-body font-semibold">TECNOLOGÍAS CON LAS QUE TRABAJAMOS</p>
+    <div class="flex flex-row gap-2 flex-wrap justify-center">
+      @for (technology of technologies; track technology.id) {
+        <ui-badge icon="code" [_label]="technology.name" large />
+      }
+    </div>
+  </div>
+</ui-card>

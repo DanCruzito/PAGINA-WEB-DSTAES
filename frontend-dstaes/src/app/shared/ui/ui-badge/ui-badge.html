@@ -1,0 +1,38 @@
+<span
+  class="font-medium inline-flex items-center gap-1 w-fit"
+  [class]="
+    [
+      variant_classes.background,
+      variant_classes.text,
+      variant_classes.size,
+      variant_classes.bordered,
+      variant_classes.pill,
+    ].join(' ')
+  "
+>
+  @if (dot()) {
+    <span class="h-1.5 w-1.5 rounded-full" [class]="variant_classes.dot"></span>
+  }
+
+  @if (icon()) {
+    <ui-icon [icon]="icon()!" />
+  }
+
+  @if (_label()) {
+    {{ _label() }}
+  } @else {
+    <ng-content />
+  }
+
+  @if (on_dismiss()) {
+    <button
+      type="button"
+      class="inline-flex items-center p-0.5 text-sm bg-transparent rounded-xs"
+      [class]="variant_classes.dismiss_hover"
+      (click)="on_dismiss()!()"
+      aria-label="Remove"
+    >
+      <ui-icon icon="close" />
+    </button>
+  }
+</span>

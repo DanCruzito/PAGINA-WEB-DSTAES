@@ -9,5 +9,5 @@ export class UiCard {
   divided = input(true, { transform: booleanAttribute });
   unwrap = input(false, { transform: booleanAttribute });
   hoverable = input(false, { transform: booleanAttribute });
-  class = input('');
+  className = input('');
 }

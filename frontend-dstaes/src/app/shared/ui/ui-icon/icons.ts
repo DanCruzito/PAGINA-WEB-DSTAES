@@ -1,4 +1,5 @@
 export const available_icons = {
+  close: 'icon-[ri--close-large-line]',
   sun: 'icon-[ri--sun-fill]',
   moon: 'icon-[ri--moon-fill]',
   arrow_left: 'icon-[ri--arrow-left-s-line]',
