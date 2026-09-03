@@ -1,17 +1,40 @@
-<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-8">
   <h2 class="font-bold text-4xl">Servicios</h2>
+  <div class="flex flex-row gap-4">
+    <div class="flex flex-col gap-4">
+      @for (service of services; track service.id) {
+        <ui-card>
+          <div class="p-4">
+            <div class="flex flex-row gap-4 items-center">
+              <div
+                class="flex w-10 aspect-square bg-brand-softer justify-center items-center rounded-md"
+              >
+                <ui-icon icon="arrow_down" class="text-2xl" />
+              </div>
+              <span class="font font-semibold text-xl">{{ service.title }}</span>
+            </div>
 
-  <ui-card>
-    <div class="p-4">
-      <div class="flex flex-row gap-4 items-center">
-        <div class="flex w-10 aspect-square bg-brand-softer justify-center items-center rounded-md">
-          <ui-icon icon="arrow_down" class="text-2xl" />
-        </div>
-        <span class="font font-semibold text-xl">Título del servicio</span>
-      </div>
-
-      Esta es una descripción corta del servicio. Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p class="text-body">
+              {{ service.short_description }}
+            </p>
+          </div>
+        </ui-card>
+      }
     </div>
-  </ui-card>
+
+    <div>
+      <ui-card>
+        <div class="flex flex-col gap-4 p-4 w-300">
+          <img [src]="services[0].image" alt="" class="w-full h-120 object-cover rounded-2xl" />
+          <h3 class="font-semibold text-2xl">{{ services[0].title }}</h3>
+          <p class="text-body">
+            {{ services[0].description }}
+          </p>
+          <ui-button variant="default" size="md" href="/contact" class="w-full">
+            Quiero contratar este servicio
+          </ui-button>
+        </div>
+      </ui-card>
+    </div>
+  </div>
 </div>
