@@ -9,7 +9,11 @@ export const available_icons = {
   people: 'icon-[ri--team-fill]',
   star: 'icon-[ri--star-fill]',
   headphone: 'icon-[ri--headphone-fill]',
-
+  code: 'icon-[ri--code-fill]',
+  smartphone: 'icon-[ri--smartphone-fill]',
+  layout: 'icon-[ri--layout-fill]',
+  cloud: 'icon-[ri--cloud-fill]',
+  briefcase: 'icon-[ri--briefcase-fill]',
 
 } as const;
 

@@ -3,38 +3,12 @@
   <div class="flex flex-row gap-4">
     <div class="flex flex-col gap-4">
       @for (service of services; track service.id) {
-        <ui-card>
-          <div class="p-4">
-            <div class="flex flex-row gap-4 items-center">
-              <div
-                class="flex w-10 aspect-square bg-brand-softer justify-center items-center rounded-md"
-              >
-                <ui-icon icon="arrow_down" class="text-2xl" />
-              </div>
-              <span class="font font-semibold text-xl">{{ service.title }}</span>
-            </div>
-
-            <p class="text-body">
-              {{ service.short_description }}
-            </p>
-          </div>
-        </ui-card>
+        <landing-section-service-option [option]="service" />
       }
     </div>
 
-    <div>
-      <ui-card>
-        <div class="flex flex-col gap-4 p-4 w-300">
-          <img [src]="services[0].image" alt="" class="w-full h-120 object-cover rounded-2xl" />
-          <h3 class="font-semibold text-2xl">{{ services[0].title }}</h3>
-          <p class="text-body">
-            {{ services[0].description }}
-          </p>
-          <ui-button variant="default" size="md" href="/contact" class="w-full">
-            Quiero contratar este servicio
-          </ui-button>
-        </div>
-      </ui-card>
+    <div class="flex flex-col gap-4">
+      <landing-section-service-selected [service]="services[0]" />
     </div>
   </div>
 </div>

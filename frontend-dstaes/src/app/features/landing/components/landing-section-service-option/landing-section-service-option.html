@@ -1,0 +1,12 @@
+<ui-card class="shadow-md! transition-shadow duration-300 cursor-pointer hover:shadow-xl!">
+  <div class="p-4">
+    <div class="flex flex-row gap-4 items-center">
+      <landing-section-service-icon [name]="option().icon" />
+      <span class="font font-semibold text-xl">{{ option().title }}</span>
+    </div>
+
+    <p class="text-body">
+      {{ option().short_description }}
+    </p>
+  </div>
+</ui-card>
