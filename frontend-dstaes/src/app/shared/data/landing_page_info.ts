@@ -478,10 +478,10 @@ export const landing_page_info: LandingPageInfoInterface =
       "title": "Plataforma de Facturación Andina Retail",
       "slug": "plataforma-facturacion-andina-retail",
       "short_description": "Sistema de facturación electrónica para una cadena de retail con reportes en tiempo real.",
-      "client_Id": 1,
+      "client_id": 1,
       "project_url": "https://andinaretail.com",
       "repository_url": "https://github.com/dstaes/andina-retail",
-      "cover_image_url": "/uploads/projects/andina-retail/cover.jpg",
+      "cover_image_url": "https://images.unsplash.com/photo-1487014679447-9f8336841d58",
       "status": "in_production",
       "is_featured": true,
       "is_active": true,
@@ -491,9 +491,9 @@ export const landing_page_info: LandingPageInfoInterface =
       "updated_at": new Date("2026-08-10T10:00:00Z"),
       "deleted_at": undefined,
       "images": [
-        { "id": 1, "project_id": 1, "image": "/uploads/projects/andina-retail/img-1.jpg", "alt_text": "Panel de reportes de ventas", "display_order": 1, "created_at": new Date("2026-01-15T10:05:00Z"), "updated_at": new Date("2026-01-15T10:05:00Z"), "deleted_at": undefined },
-        { "id": 2, "project_id": 1, "image": "/uploads/projects/andina-retail/img-2.jpg", "alt_text": "Módulo de emisión de facturas", "display_order": 2, "created_at": new Date("2026-01-15T10:06:00Z"), "updated_at": new Date("2026-01-15T10:06:00Z"), "deleted_at": undefined },
-        { "id": 3, "project_id": 1, "image": "/uploads/projects/andina-retail/img-3.jpg", "alt_text": "Vista móvil del sistema", "display_order": 3, "created_at": new Date("2026-01-15T10:07:00Z"), "updated_at": new Date("2026-01-15T10:07:00Z"), "deleted_at": undefined }
+        { "id": 1, "project_id": 1, "image": "https://plus.unsplash.com/premium_photo-1770724979906-ab69af42338a", "alt_text": "Panel de reportes de ventas", "display_order": 1, "created_at": new Date("2026-01-15T10:05:00Z"), "updated_at": new Date("2026-01-15T10:05:00Z"), "deleted_at": undefined },
+        { "id": 2, "project_id": 1, "image": "https://plus.unsplash.com/premium_photo-1770724979906-ab69af42338a", "alt_text": "Módulo de emisión de facturas", "display_order": 2, "created_at": new Date("2026-01-15T10:06:00Z"), "updated_at": new Date("2026-01-15T10:06:00Z"), "deleted_at": undefined },
+        { "id": 3, "project_id": 1, "image": "https://plus.unsplash.com/premium_photo-1770724979906-ab69af42338a", "alt_text": "Vista móvil del sistema", "display_order": 3, "created_at": new Date("2026-01-15T10:07:00Z"), "updated_at": new Date("2026-01-15T10:07:00Z"), "deleted_at": undefined }
       ],
       "project_technologies": [
         { "project_id": 1, "technology_id": 1, "created_at": new Date("2026-01-15T10:10:00Z"), "updated_at": new Date("2026-01-15T10:10:00Z"), "deleted_at": undefined },
@@ -506,10 +506,10 @@ export const landing_page_info: LandingPageInfoInterface =
       "title": "App de Delivery Nortec",
       "slug": "app-delivery-nortec",
       "short_description": "Aplicación móvil de pedidos con seguimiento en vivo y pagos integrados.",
-      "client_Id": 2,
+      "client_id": 2,
       "project_url": "https://nortecdelivery.com",
       "repository_url": "https://github.com/dstaes/nortec-delivery",
-      "cover_image_url": "/uploads/projects/nortec-delivery/cover.jpg",
+      "cover_image_url": "https://images.unsplash.com/photo-1487014679447-9f8336841d58",
       "status": "completed",
       "is_featured": true,
       "is_active": true,
@@ -519,8 +519,8 @@ export const landing_page_info: LandingPageInfoInterface =
       "updated_at": new Date("2026-05-02T10:00:00Z"),
       "deleted_at": undefined,
       "images": [
-        { "id": 4, "project_id": 2, "image": "/uploads/projects/nortec-delivery/img-1.jpg", "alt_text": "Pantalla de seguimiento de pedido", "display_order": 1, "created_at": new Date("2025-12-20T10:05:00Z"), "updated_at": new Date("2025-12-20T10:05:00Z"), "deleted_at": undefined },
-        { "id": 5, "project_id": 2, "image": "/uploads/projects/nortec-delivery/img-2.jpg", "alt_text": "Catálogo de restaurantes", "display_order": 2, "created_at": new Date("2025-12-20T10:06:00Z"), "updated_at": new Date("2025-12-20T10:06:00Z"), "deleted_at": undefined }
+        { "id": 4, "project_id": 2, "image": "https://plus.unsplash.com/premium_photo-1770724979906-ab69af42338a", "alt_text": "Pantalla de seguimiento de pedido", "display_order": 1, "created_at": new Date("2025-12-20T10:05:00Z"), "updated_at": new Date("2025-12-20T10:05:00Z"), "deleted_at": undefined },
+        { "id": 5, "project_id": 2, "image": "https://plus.unsplash.com/premium_photo-1770724979906-ab69af42338a", "alt_text": "Catálogo de restaurantes", "display_order": 2, "created_at": new Date("2025-12-20T10:06:00Z"), "updated_at": new Date("2025-12-20T10:06:00Z"), "deleted_at": undefined }
       ],
       "project_technologies": [
         { "project_id": 2, "technology_id": 5, "created_at": new Date("2025-12-20T10:10:00Z"), "updated_at": new Date("2025-12-20T10:10:00Z"), "deleted_at": undefined },
@@ -532,10 +532,10 @@ export const landing_page_info: LandingPageInfoInterface =
       "title": "Tienda E-commerce Bloom Studio",
       "slug": "ecommerce-bloom-studio",
       "short_description": "Tienda en línea con catálogo dinámico, checkout y panel administrativo.",
-      "client_Id": 3,
+      "client_id": 3,
       "project_url": "https://bloomstudio.bo",
       "repository_url": undefined,
-      "cover_image_url": "/uploads/projects/bloom-studio/cover.jpg",
+      "cover_image_url": "https://images.unsplash.com/photo-1487014679447-9f8336841d58",
       "status": "completed",
       "is_featured": false,
       "is_active": true,
@@ -545,9 +545,9 @@ export const landing_page_info: LandingPageInfoInterface =
       "updated_at": new Date("2026-01-18T10:00:00Z"),
       "deleted_at": undefined,
       "images": [
-        { "id": 6, "project_id": 3, "image": "/uploads/projects/bloom-studio/img-1.jpg", "alt_text": "Catálogo de productos", "display_order": 1, "created_at": new Date("2025-10-05T10:05:00Z"), "updated_at": new Date("2025-10-05T10:05:00Z"), "deleted_at": undefined },
-        { "id": 7, "project_id": 3, "image": "/uploads/projects/bloom-studio/img-2.jpg", "alt_text": "Proceso de checkout", "display_order": 2, "created_at": new Date("2025-10-05T10:06:00Z"), "updated_at": new Date("2025-10-05T10:06:00Z"), "deleted_at": undefined },
-        { "id": 8, "project_id": 3, "image": "/uploads/projects/bloom-studio/img-3.jpg", "alt_text": "Panel administrativo", "display_order": 3, "created_at": new Date("2025-10-05T10:07:00Z"), "updated_at": new Date("2025-10-05T10:07:00Z"), "deleted_at": undefined }
+        { "id": 6, "project_id": 3, "image": "https://plus.unsplash.com/premium_photo-1770724979906-ab69af42338a", "alt_text": "Catálogo de productos", "display_order": 1, "created_at": new Date("2025-10-05T10:05:00Z"), "updated_at": new Date("2025-10-05T10:05:00Z"), "deleted_at": undefined },
+        { "id": 7, "project_id": 3, "image": "https://plus.unsplash.com/premium_photo-1770724979906-ab69af42338a", "alt_text": "Proceso de checkout", "display_order": 2, "created_at": new Date("2025-10-05T10:06:00Z"), "updated_at": new Date("2025-10-05T10:06:00Z"), "deleted_at": undefined },
+        { "id": 8, "project_id": 3, "image": "https://plus.unsplash.com/premium_photo-1770724979906-ab69af42338a", "alt_text": "Panel administrativo", "display_order": 3, "created_at": new Date("2025-10-05T10:07:00Z"), "updated_at": new Date("2025-10-05T10:07:00Z"), "deleted_at": undefined }
       ],
       "project_technologies": [
         { "project_id": 3, "technology_id": 3, "created_at": new Date("2025-10-05T10:10:00Z"), "updated_at": new Date("2025-10-05T10:10:00Z"), "deleted_at": undefined },
@@ -560,10 +560,10 @@ export const landing_page_info: LandingPageInfoInterface =
       "title": "CRM interno Grupo Paredes",
       "slug": "crm-grupo-paredes",
       "short_description": "Sistema de gestión de clientes y seguimiento comercial a medida.",
-      "client_Id": 4,
+      "client_id": 4,
       "project_url": undefined,
       "repository_url": "https://github.com/dstaes/grupo-paredes-crm",
-      "cover_image_url": "/uploads/projects/grupo-paredes/cover.jpg",
+      "cover_image_url": "https://images.unsplash.com/photo-1487014679447-9f8336841d58",
       "status": "in_production",
       "is_featured": false,
       "is_active": true,
@@ -573,7 +573,7 @@ export const landing_page_info: LandingPageInfoInterface =
       "updated_at": new Date("2026-08-15T10:00:00Z"),
       "deleted_at": undefined,
       "images": [
-        { "id": 9, "project_id": 4, "image": "/uploads/projects/grupo-paredes/img-1.jpg", "alt_text": "Panel de oportunidades de venta", "display_order": 1, "created_at": new Date("2026-03-01T10:05:00Z"), "updated_at": new Date("2026-03-01T10:05:00Z"), "deleted_at": undefined }
+        { "id": 9, "project_id": 4, "image": "https://plus.unsplash.com/premium_photo-1770724979906-ab69af42338a", "alt_text": "Panel de oportunidades de venta", "display_order": 1, "created_at": new Date("2026-03-01T10:05:00Z"), "updated_at": new Date("2026-03-01T10:05:00Z"), "deleted_at": undefined }
       ],
       "project_technologies": [
         { "project_id": 4, "technology_id": 1, "created_at": new Date("2026-03-01T10:10:00Z"), "updated_at": new Date("2026-03-01T10:10:00Z"), "deleted_at": undefined },

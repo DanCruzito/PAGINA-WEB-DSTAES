@@ -1,0 +1,25 @@
+<div
+  class="border border-default shadow-xs flex flex-col rounded-lg overflow-hidden hover:bg-neutral-secondary-medium pointer-cursor relative h-full"
+>
+  <img [src]="project().cover_image_url" [alt]="project().title" class="h-72 object-cover" />
+  <ui-badge variant="gray" large size="sm" pill class="absolute top-4 left-4">
+    {{ project().status }}
+  </ui-badge>
+
+  <div class="flex flex-col justify-between gap-2 py-6 px-8">
+    <div class="flex flex-col">
+      <span class="font-bold text-2xl text-heading">Plataforma de Facturación</span>
+      <p class="text-body">
+        Sistema de facturación electrónica para pymes con reportes en tiempo real.
+      </p>
+    </div>
+
+    <div class="flex flex-wrap gap-2 justify-end items-end">
+      @for (technology of project().project_technologies; track technology.technology_id) {
+        <ui-badge variant="brand" dot size="sm" pill
+          >Technology ID: {{ technology.technology_id }}</ui-badge
+        >
+      }
+    </div>
+  </div>
+</div>

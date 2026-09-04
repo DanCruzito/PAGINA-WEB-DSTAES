@@ -6,7 +6,7 @@ export interface ProjectInterface {
   title: string;
   slug: string;
   short_description: string;
-  client_Id: number;
+  client_id: number;
   project_url?: string;
   repository_url?: string;
   cover_image_url: string;

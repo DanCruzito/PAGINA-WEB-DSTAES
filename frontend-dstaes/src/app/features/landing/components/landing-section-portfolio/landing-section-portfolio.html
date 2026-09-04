@@ -1,1 +1,9 @@
-<landing-wrapper title="Portfolio"> </landing-wrapper>
+<landing-wrapper title="Portafolio">
+  <div
+    class="grid grid-cols-1 min-[720px]:grid-cols-2 min-[930px]:grid-cols-3 min-[1220px]:grid-cols-4 gap-6"
+  >
+    @for (project of projects; track project.id) {
+      <landing-section-portfolio-card [project]="project" />
+    }
+  </div>
+</landing-wrapper>
