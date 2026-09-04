@@ -12,17 +12,18 @@ export const landing_options: { label: string; slug: string }[] = [
     slug: 'portfolio',
   },
   {
-    label: 'Nosotros',
-    slug: 'about',
+    label: 'Productos',
+    slug: 'products',
+  },
+  {
+    label: 'Paquetes',
+    slug: 'packages',
   },
   {
     label: 'Testimonios',
     slug: 'testimonials',
   },
-  {
-    label: 'Blog',
-    slug: 'blog',
-  },
+
   {
     label: 'Contacto',
     slug: 'contact',
